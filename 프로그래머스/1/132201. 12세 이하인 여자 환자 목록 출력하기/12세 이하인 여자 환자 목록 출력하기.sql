@@ -1,11 +1,11 @@
 -- 코드를 입력하세요
 SELECT
-    PT_NAME
-    , PT_NO
-    , GEND_CD
-    , AGE
-    , IF(ISNULL(TLNO), 'NONE', TLNO) AS TLNO
-FROM PATIENT
-WHERE AGE <= 12
-AND GEND_CD = 'W'
-ORDER BY AGE DESC, PT_NAME;
+    pt_name
+    , pt_no
+    , gend_cd
+    , age
+    , IF(ISNULL(tlno), 'NONE', tlno) AS tlno
+FROM patient
+WHERE age <= 12
+AND gend_cd = 'W'
+ORDER BY age DESC, pt_name;
