@@ -4,4 +4,4 @@ SELECT
     , name
     , datetime
 FROM animal_ins
-ORDER BY name ASC, datetime DESC;
+ORDER BY name, datetime DESC;
